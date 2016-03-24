@@ -1,0 +1,9 @@
+<html xmlns:th="http://www.thymeleaf.org">
+  <body>
+    <ul>
+      <li th:each="customer : ${customers}">
+        <span th:text="${customer.toString()}"></span>
+      </li>
+    </ul>
+  </body>
+</html>
